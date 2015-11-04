@@ -6,20 +6,20 @@ It works by cloning the repository into a folder and setting up soft links.
 
 ### How to use ###
 
-* Clone the repository into ~/rcfiles/
+* Clone the repository into ~/dotfiles/
 * Create soft links from your home directory to the files in the repository
 
 ##### bash_profile #####
 
-    $ ln -s ~/rcfiles/bash_profile ~/.bash_profile
-    $ ln -s ~/rcfiles/bash_profile_includes ~/.bash_profile_includes
+    $ ln -s ~/dotfiles/bash_profile ~/.bash_profile
+    $ ln -s ~/dotfiles/bash_profile_includes ~/.bash_profile_includes
 
 ##### ack, git, irb #####
 
-    $ ln -s ~/rcfiles/ackrc ~/.ackrc
-    $ ln -s ~/rcfiles/gitconfig ~/.gitconfig
-    $ ln -s ~/rcfiles/inputrc ~/.inputrc
-    $ ln -s ~/rcfiles/irbrc ~/.irbrc
+    $ ln -s ~/dotfiles/ackrc ~/.ackrc
+    $ ln -s ~/dotfiles/gitconfig ~/.gitconfig
+    $ ln -s ~/dotfiles/inputrc ~/.inputrc
+    $ ln -s ~/dotfiles/irbrc ~/.irbrc
 
 ### Summary of Changes
 
