@@ -1,45 +1,51 @@
 Dotfiles
 ========
 
-This is a copy of dimroc's dotfiles.
+This is a set of standard config files including git, bash, ack.
+It works by cloning the repository into a folder and setting up soft links.
 
-How to use
-----------
+### How to use ###
 
-Create soft links from your home directory to the resources folder like so:
+* Clone the repository into ~/rcfiles/
+* Create soft links from your home directory to the files in the repository
 
-    ~$ ln -s resources/bash_profile .bash_profile
-    ~$ ln -s resources/ackrc .ackrc
-    ~$ ln -s resources/gitconfig .gitconfig
-    ~$ ln -s resources/inputrc .inputrc
-    ~$ ln -s resources/irbrc .irbrc
+##### bash_profile #####
 
+    $ ln -s ~/rcfiles/bash_profile ~/.bash_profile
+    $ ln -s ~/rcfiles/bash_profile_includes ~/.bash_profile_includes
 
-bash_profile
-----------------------
+##### ack, git, irb #####
+
+    $ ln -s ~/rcfiles/ackrc ~/.ackrc
+    $ ln -s ~/rcfiles/gitconfig ~/.gitconfig
+    $ ln -s ~/rcfiles/inputrc ~/.inputrc
+    $ ln -s ~/rcfiles/irbrc ~/.irbrc
+
+### Summary of Changes
+
+##### bash_profile #####
 
 * Color prompt that displays git branch
 * Color output from git diff
 
-ackrc
-----------------------
+##### ackrc #####
 
 * Adds coffeescript extension as a type
 * ignores ruby mine project directories
 
-gitconfig
-----------------------
+##### gitconfig #####
 
 * Added a variety of git aliases
 * Assigned mergetool to diffmerge
 
-inputrc
-----------------------
+##### inputrc #####
 
 * Allow up and down arrow to search history based on what's already typed. rvm <up-arrow> only shows history entries starting with rvm.
 
-irbrc
-----------------------
+##### irbrc #####
 
 * Add wirble, some printing functionality, and some other coloring support to irb
 
+### Credits ###
+
+This is a copy of dimroc's 'resources' repository.
