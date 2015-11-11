@@ -14,6 +14,10 @@ It works by cloning the repository into a folder and setting up soft links.
     $ ln -s ~/dotfiles/bash_profile ~/.bash_profile
     $ ln -s ~/dotfiles/bash_profile_includes ~/.bash_profile_includes
 
+##### netrc (for git) #####
+
+    $ ln -s ~/dotfiles/netrc ~/.netrc
+
 ##### ack, git, irb #####
 
     $ ln -s ~/dotfiles/ackrc ~/.ackrc
